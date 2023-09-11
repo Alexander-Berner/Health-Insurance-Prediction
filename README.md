@@ -35,6 +35,10 @@ Northeast<br>
 <br />
 This dataset is for the US and these are geographical regions <br />
 <br />
+
+___
+
+
 Description of each column:
 
 
@@ -48,6 +52,9 @@ Description of each column:
 | region    | Geographic region    |
 | charges   | Insurance charges    |
 
+___
+
+
 With the information in the data set understood, it can be one hot encoded so that it is all numerical. This makes analysis easier:
 
 | age | bmi   | children | charges     | sex_male | smoker_yes | region_northeast | region_northwest | region_southeast | region_southwest |
@@ -56,7 +63,10 @@ With the information in the data set understood, it can be one hot encoded so th
 | 18  | 33.770| 1        | 1725.55230  | 1        | 0          | 0                | 0                | 1                | 0                |
 | 28  | 33.000| 3        | 4449.46200  | 1        | 0          | 0                | 0                | 1                | 0                |
 
-<br />
+
+___
+
+
 <br />
 
 ### Exploration of data by region
@@ -77,6 +87,9 @@ The following table shows the average client from each region.
 | region_southwest  | 0.000000      | 0.000000      | 1.000000      | 1.000000      |
 
 From the table above, it is clear that there is some minor deviation in the clients from each of the US regions, but they are mostly similar. This is useful information when analysing outliers because it means that it is unlikely that the region would have significant effect on the deviation of data.
+
+
+___
 
 <br />
 
@@ -102,6 +115,9 @@ Average features by sex:
 The average male client is very similar to the average female client for most of the features. However, the charges for women are slightly higher than for men.
 
 Other feature trends are explored in the following sections.
+
+
+___
 
 <br />
 
