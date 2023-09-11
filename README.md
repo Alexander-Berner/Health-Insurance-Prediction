@@ -110,19 +110,18 @@ Other feature trends are explored in the following sections.
 
 A correlation matrix can be used to check which trends stand out so that they can be focused on.
 
-![Correlation Matrix](Images/c_matrix.png)  
-
+<img src="Images/c_matrix.png" width="500">
 
 
 From the plot above it is clear that the strongest correlation is between smoking and insurance charges. 
-There also appear to be weaker trends between BMI, age, and charges.
+There also appear to be weaker trends between bmi, age and charges.
 <br />
 
 ---
 
 A scatter matrix can be used to quickly visually inspect trends
 
-![Scatter Matrix](Images/scatter_matrix.png) 
+<img src="Images/scatter_matrix.png" width="900">
 
 The scatter matrix confirms the initial observation from the correlation matrix. It is also clear that there is the strongest trend age and charges.
 
@@ -130,7 +129,8 @@ The scatter matrix confirms the initial observation from the correlation matrix.
 
 The following visualisation shows a scatter of age vs charges, split by the clients smoking status:
 
-![Age vs Charges](Images/charges_vs_age.png) 
+<img src="Images/charges_vs_age.png" width="500">
+
 
 From visual inspection it is clear that there is a strong trend for non smokers.
 For smokers there appear to be 2 weaker individual trend lines. The following section will explore reasons for this.
@@ -139,11 +139,13 @@ For smokers there appear to be 2 weaker individual trend lines. The following se
 
 A plot of age vs charges for just smokers can confirm the previously made observation. There appear to be two trend lines in the data:
 
-![Age vs Charges](Images/smokers_charges_age.png) 
+<img src="Images/smokers_charges_age.png" width="500">
+
 
 For further analysis the data is split using K clustering; using 2 clusters:
 
-![K Clusters](Images/k_clusters.png) 
+<img src="Images/k_clusters.png" width="500">
+
 
 The 2 clusters can be generally compared by checking their mean values:
 
@@ -162,7 +164,8 @@ The 2 clusters can be generally compared by checking their mean values:
 
 The biggest difference between the two clusters is BMI:
 
-![BMI vs Charges](Images/bmi_vs_charges.png)  
+<img src="Images/bmi_vs_charges.png" width="500">
+
 
 From the plot above, it can be observed that for a client with the following conditions:
 - BMI greater than 30
@@ -172,7 +175,7 @@ The premium charge is a minimum of $31000.
 
 A plot of BMI vs charges for non smokers shows that this trend only applies to smokers.
 
-![BMI vs Charges](Images/non_smokers_bmi.png)  
+<img src="Images/non_smokers_bmi.png" width="500">
 
 
 # Cleaning Data For Smokers
@@ -180,20 +183,20 @@ A plot of BMI vs charges for non smokers shows that this trend only applies to s
 To allow accurate training of a regression model, the data needs to be clean from outliers. This section justifies how and why certain data points were removed as outliers. Some outliers, even though not results of erroneous nature, had to be removed as they would skew the regression model.
 
 The following visualisation shows the initially observed outliers that should be removed:
-![Main Outliers](Images/outliers_circle.png)  
+<img src="Images/outliers_circle.png" width="500">
 
 
 
 The normal distribution can be used to help clean the data. Different numbers of standard deviations are used to experiment with the threshold that should be used to filter the data:
 
-![Standard Deviation Thresholds](Images/sd_clean.png) 
+<img src="Images/sd_clean.png" width="700">
 
 
 From the plot of the different standard deviation thresholds, it is clear that using thw normal distribution is not the best method to clean the data as either not enough data is removed (2 standard deviations) or too much data is removed (1.4 standard deviations)
 
 The outliers can be  isolated manually by using conditional statements (e.g., BMI< 30 & charges > 30000)
 
-![Isolated Outliers](Images/isolated_outliers.png) 
+<img src="Images/isolated_outliers.png" width="500">
 
 
 ### Exploring the cause of the outliers
@@ -217,7 +220,8 @@ From the table it isn't clear as to what the causes of the outliers are. Most of
 
 To visually inspect the causes of the outliers, gradients of different features can be plot with BMI vs charges:
 
-![Gradient Plots](Images/outlier_gradients.png)  
+<img src="Images/outlier_gradients.png" width="500">
+
 
 For both clusters, the general trend is that with age the charges increase, *including the bump when bmi>30.*<br />
 There doesn't appear to be a strong trend between the number of children and charges.
@@ -230,7 +234,7 @@ The previously isolated outliers can be dropped as they don't appear to be cause
 
 The charges for non smokers seem to have many outliers away from the general trend. These are isolated by filtering the data set using conditional statements.
 
-![Non Smoker Plot](Images/non_smoker_age.png)  
+<img src="Images/non_smoker_age.png" width="500">
 
 
 ### Exploring the Cause of the Outliers
@@ -255,7 +259,8 @@ From the table it isn't clear as to what the causes of the outliers are. Most of
 
 To visually inspect the causes of the outliers, gradients of different features can be plot with BMI vs charges:
 
-![Gradient Plots](Images/outlier_graidents_2.png) 
+<img src="Images/outlier_graidents_2.png" width="500">
+
 
 The general trend is that charges are higher for clients with more children for the "main trend data", but this isn't represented in the outliers.
 There doesn't appear to be a strong trend between BMI and charges
@@ -265,7 +270,7 @@ As before, the isolated outliers can be dropped as they don't appear to be cause
 
 # Clean Data
 
-![Clean Data](Images/clean_data.png)  
+<img src="Images/clean_data.png" width="500">
 
 
 ### Summary of Main Observations
