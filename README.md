@@ -250,7 +250,7 @@ The previously isolated outliers can be dropped as they don't appear to be cause
 
 The charges for non smokers seem to have many outliers away from the general trend. These are isolated by filtering the data set using conditional statements.
 
-<img src="Images/non_smoker_age.png" width="500">
+<img src="Images/non_smoker_age.png" width="800">
 
 
 ### Exploring the Cause of the Outliers
@@ -275,7 +275,7 @@ From the table it isn't clear as to what the causes of the outliers are. Most of
 
 To visually inspect the causes of the outliers, gradients of different features can be plot with BMI vs charges:
 
-<img src="Images/outlier_graidents_2.png" width="500">
+<img src="Images/outlier_graidents_2.png" width="800">
 
 
 The general trend is that charges are higher for clients with more children for the "main trend data", but this isn't represented in the outliers.
