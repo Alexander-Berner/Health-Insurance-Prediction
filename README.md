@@ -236,7 +236,7 @@ From the table it isn't clear as to what the causes of the outliers are. Most of
 
 To visually inspect the causes of the outliers, gradients of different features can be plot with BMI vs charges:
 
-<img src="Images/outlier_gradients.png" width="500">
+<img src="Images/outlier_gradients.png" width="800">
 
 
 For both clusters, the general trend is that with age the charges increase, *including the bump when bmi>30.*<br />
@@ -246,11 +246,11 @@ The outliers don't appear to be caused by age or number of children
 
 The previously isolated outliers can be dropped as they don't appear to be caused by the features in this data set. They could however have been caused by other features, such as number of previous claims, that are not mentioned in this data set.
 
-# Cleaning Data For Smokers
+# Cleaning Data For Non Smokers
 
 The charges for non smokers seem to have many outliers away from the general trend. These are isolated by filtering the data set using conditional statements.
 
-<img src="Images/non_smoker_age.png" width="800">
+<img src="Images/non_smoker_age.png" width="500">
 
 
 ### Exploring the Cause of the Outliers
