@@ -199,6 +199,7 @@ A plot of BMI vs charges for non smokers shows that this trend only applies to s
 To allow accurate training of a regression model, the data needs to be clean from outliers. This section justifies how and why certain data points were removed as outliers. Some outliers, even though not results of erroneous nature, had to be removed as they would skew the regression model.
 
 The following visualisation shows the initially observed outliers that should be removed:
+
 <img src="Images/outliers_circle.png" width="500">
 
 
